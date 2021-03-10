@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="shortcut icon" href="assets/images/site-icon-128x111-1.png" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+  <button id="btn">Sign in</button>
+  <div id="ovrly"></div>
+  <div id="login">
+    <h1>LOGIN TO ORDER</h1>
+    <form onsubmit="login_page()">
+    <form>
+      <h2>USERNAME</h2>
+      <input type="text" placeholder="Email address or username" class="txt" />
+      <h2>PASSWORD</h2>
+      <input type="password" id="txtPassword" class="pswd" placeholder="Password" />
+      <span id="toggle_pwd" class="fa fa-fw fa-eye field_icon"></span>
+      <input type="submit" value="LOG IN" id="btn1" />
+      <a href="#">Forgot password</a>
+      <hr class="separation_line" />
+      <h4>Don't have an account yet?</h4>
+      <input type="button" value="CLICK TO APPLY" id="btn2" />
+    </form>
+  </div>
+</section>
+<section>
+  <div id="apply">
+    <span id="back_button" class="fas fa-long-arrow-alt-left"></span>
+    <h6>APPLY FOR CONFIRMATION</h6>
+    <h5>If not, you must have forgotten your password</h5>
+    <form action="mailto:applications@get2u.org?bcc=admin@get2u.org?subject=Application%2FReset?body=If%20your%20email%20application%20has%20opened%2C%20it%20means%20your%20application%2Fpassword%20request%20did%20not%20successfully%20go%20through.%0D%0A%0D%0ATo%20ensure%20we%20can%20get%20to%20you%20as%20soon%20as%20possible%2C%20please%20complete%20the%20simplified%20form%20below%0D%0A%0D%0ABusiness%20name%3A%0D%0A%0D%0ABusiness%20email%20address%3A" enctype="text/plain" onsubmit="Thank_you_note()">
+      <form1>
+        <h7>NAME</h7>
+        <input type="text" placeholder="Business name" class="txt1" />
+        <h7>EMAIL</h7>
+        <input type="text" class="txt1" placeholder="Business email address" />
+        <input type="submit" value="SEND" id="btn3" />
+      </form1>
+  </div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
